@@ -1,0 +1,46 @@
+.menu-button{
+  position: fixed;
+  top: -120px;
+  left: -120px;
+  z-index: 1000;
+}
+
+.menu-circle{
+  background-color: #58249C;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.App.show-nav .menu-circle{
+  transform: rotate(-70deg);
+}
+
+.menu-circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 50px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.menu-circle button:focus {
+  outline: none;
+}
+
+.menu-circle button#open {
+  left: 60%;
+}
+
+.menu-circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.banner{
+  max-width: 500px;
+  margin: -30px auto 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.banner img{
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.banner h2{
+    margin: 0;
+    background: #fff;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top: -60px;
+    left: -10px;
+    transform: rotateZ(-1deg);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+  }
+
+
+  .detail-info{
+    font-family: "Raleway";
+    width: 100%;
+    margin: -80px auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .detail-info p{
+    margin-bottom: 4px;
+    color: #777;
+  }
+
+  .detail-info ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0;
+   
+  }
+
+  .detail-info li {
+    list-style-type: none;
+    margin-right: 10px;
+    color: #58249C;
+    font-weight: bold;
+  }
+
+  .detail-info li::after{
+    content: ","
+  }
+
+  .detail-info li:last-child::after{
+    content: "."
+  }
+
+  .method{
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .edit, .delete{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #58249C;
+    cursor: pointer;
+  }
+
+  .delete{
+    top: 180px;
+  }
+
+
+
+  @media( max-width: 480px){
+
+    .detail-info p {
+      margin-bottom: 20px;
+    }
+    .detail-info ul{
+      flex-direction: column;
+    }
+
+    .delete, .edit{
+      position: initial;
+      display: inline;
+      margin: 50px;
+    }
+  }

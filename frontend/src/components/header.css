@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.header h1, .header h2 {
+  margin: 0;
+}
+.header span {
+  display: block;
+  line-height: 1em;
+}
+.header span:first-child {
+  font-size: 1em;
+  font-weight: 400;
+}
+.header span:last-child {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.header h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}

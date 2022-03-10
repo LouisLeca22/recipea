@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.recipe-list{
+  font-family: "Raleway";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 60px;
+}
+
+.featured{
+  height: 280px;
+}
+
+.card{
+  transform: rotateZ(-1deg);
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.card:hover{
+  transform: rotate(3deg) scale(1.04)
+}
+
+.details{
+  background: #fff;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  margin: 0;
+  position: relative;
+  top: -40px;
+  left: -10px;
+}
+
+.info{
+  padding: 16px;
+}
+
+.info h4{
+  margin: 4px;
+  text-transform: uppercase;
+}
+
+.info p{
+  margin: 0;
+  color: #777
+}
+
+.info div {
+  color: #555;
+  margin: 5px 0;
+  line-height: 1.5rem;
+}
+
+.actions{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions span{
+  color: #fff;
+  background: #58249C;
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.actions span:hover{
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.App.show-nav .recipe-list{
+  overflow: scroll;
+  height: 100vh;
+}
+
+::-webkit-scrollbar{
+  display: none
+}
+
+@media (max-width: 480px){
+  .recipe-list{
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+}
