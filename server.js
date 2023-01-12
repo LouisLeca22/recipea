@@ -23,8 +23,8 @@ app.use("/api/users", userRoutes)
 app.use("/api/recipes", recipeRoutes)
 
 if(process.env.NODE_ENV === "production"){
-  app.use(express.static(path.join(__dirname,"../frontend/build")))
-  app.get("*", (req,res) => res.sendFile(__dirname, "../", "frontend", "build", "index.html"))
+  app.use(express.static(path.join(__dirname,"./client/build")))
+  app.get("*", (req,res) => res.sendFile(__dirname, "client", "build", "index.html"))
 } else {
   app.get("/", (req, res) => {
     res.status(200).json({message: "Bienvenu sur Recipea"})
